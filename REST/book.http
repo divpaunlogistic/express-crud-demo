@@ -1,0 +1,25 @@
+### Variables
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Y2Q2ODMxZjFhY2I0ZjBiNjkxYzRlZjYiLCJpYXQiOjE1NTc1NjIxNDMsImV4cCI6MTU1NzkyMjE0M30.BP7n27AVY9MKTz1ViHMJWOVqQGMktJmT8AJWrZuQoP0
+@book = { "title": "Gandhiji ni vato", "description": "Gandhiji ni vato" }
+@userId = 5cd6831f1acb4f0b691c4ef6
+
+### Get current user's profile
+GET  http://localhost:5000/api/book/get
+x-auth-token: {{token}}
+
+### Create or update user's profile
+POST  http://localhost:5000/api/book/add
+x-auth-token: {{token}}
+content-type: application/json
+
+{{book}}
+
+### Get all profiles
+GET  http://localhost:5000/api/book
+
+### Get profile by userId
+GET  http://localhost:5000/api/book/user/{{userId}}
+
+### Delete profile and user
+DELETE  http://localhost:5000/api/book
+x-auth-token: {{token}}
