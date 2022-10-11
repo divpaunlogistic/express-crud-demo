@@ -1,6 +1,9 @@
 {
   "name": "mongoose-express-ts",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "Mongoose Node.js Express TypeScript application boilerplate with best practices for API development.",
   "author": "Paul Cham",
   "license": "MIT",
