@@ -28,6 +28,6 @@ const tutorialSchema: Schema = new Schema({
 
 });
 
-const Tag: Model<ITag> = model("Tag", tutorialSchema);
+const Tag: Model<any> = model("Tag", tutorialSchema);
 
 export default Tag;

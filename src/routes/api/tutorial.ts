@@ -3,6 +3,7 @@ import { check, validationResult } from "express-validator/check";
 import HttpStatusCodes from "http-status-codes";
 
 import auth from "../../middleware/auth";
+import House, { IHouse } from "../../models/House";
 import Tutorial, { ITutorial } from "../../models/Tutorial";
 import Tag, { ITag } from "../../models/Tag";
 

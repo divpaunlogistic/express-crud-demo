@@ -25,6 +25,6 @@ const tutorialSchema: Schema = new Schema({
 
 });
 
-const Tutorial: Model<ITutorial> = model("Tutorial", tutorialSchema);
+const Tutorial: Model<any> = model("Tutorial", tutorialSchema);
 
 export default Tutorial;

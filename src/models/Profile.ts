@@ -39,6 +39,6 @@ const profileSchema: Schema = new Schema({
   }
 });
 
-const Profile: Model<IProfile> = model("Profile", profileSchema);
+const Profile: Model<any> = model("Profile", profileSchema);
 
 export default Profile;

@@ -23,6 +23,6 @@ const houseSchema: Schema = new Schema({
 
 });
 
-const House: Model<IHouse> = model("House", houseSchema);
+const House: Model<any> = model("House", houseSchema);
 
 export default House;

@@ -28,6 +28,6 @@ const bookSchema: Schema = new Schema({
   }
 });
 
-const Book: Model<IBook> = model("Book", bookSchema);
+const Book: Model<any> = model("Book", bookSchema);
 
 export default Book;
