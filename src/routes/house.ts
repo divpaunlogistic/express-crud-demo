@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { HouseController } from "../../controllers/HouseController";
+import { HouseController } from "./../controllers/HouseController";
 
 export class Routes {
 

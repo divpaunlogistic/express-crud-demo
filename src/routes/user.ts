@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { UserController } from "../../controllers/UserController";
+import { UserController } from "./../controllers/UserController";
 
 export class Routes {
 

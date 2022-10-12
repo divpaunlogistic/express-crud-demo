@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AuthController } from "../../controllers/AuthController";
+import { AuthController } from "./../controllers/AuthController";
 
 export class Routes {
 
