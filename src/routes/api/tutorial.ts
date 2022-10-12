@@ -12,9 +12,6 @@ import User, { IUser } from "../../models/User";
 
 const router: Router = Router();
 
-// @route   GET api/book/get-book
-// @desc    Get current user's profile
-// @access  Private
 router.get("/get", auth, async (req: Request, res: Response) => {
   try {
     
@@ -39,9 +36,6 @@ router.get("/get", auth, async (req: Request, res: Response) => {
   }
 });
 
-// @route   POST api/book
-// @desc    Create or update user's book
-// @access  Private
 router.post(
   "/add",
   [
@@ -98,9 +92,7 @@ router.post(
   }
 );
 
-// @route   GET api/book
-// @desc    Get all books
-// @access  Public
+
 router.get("/all", async (_req: Request, res: Response) => {
   try {
     const tutorials = await Tutorial.find().populate("tags");
@@ -113,9 +105,6 @@ router.get("/all", async (_req: Request, res: Response) => {
 });
 
 
-// @route   DELETE api/book
-// @desc    Delete book and user
-// @access  Private
 router.delete("/", auth, async (req: Request, res: Response) => {
   try {
     // Remove book
